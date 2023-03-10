@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sem_10</title>
+    <script src="./data.js"></script>
+  </head>
+  <body>
+    Семинар 10 Домашняя работа
+    <div class="content">
+      <div class="date">
+        <h3>"date"</h3>
+      </div>
+      <div class="explanation">
+        <p>"explanation"></p>
+      </div>
+    </div>
+  </body>
+  <script>
+    const data = JSON.parse(dataInfo);
+    data.array.forEach(element => {
+      const divE1 = document.createElement('div');
+      divE1.classList.add = 'date';
+      document.querySelector('.content')appendChild(divE1);
+
+      const pEl = document.createElement('p');
+      pEl.classList.add = 'explanation';
+      pEl.textContent = element.name
+      pEl.appendChild(pEl);
+
+    });
+  </script>
+</html>
